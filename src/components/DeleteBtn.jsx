@@ -4,7 +4,11 @@ import PropTypes from 'prop-types';
 
 const DeleteBtn = ({ userId }) => {
   const dispatch = useDispatch();
-  return <button onClick={dispatch(deleteContact(userId))}>`U+2421`</button>;
+  return (
+    <button onClick={() => dispatch(deleteContact(userId))}>
+      Delete contact
+    </button>
+  );
 };
 
 export default DeleteBtn;

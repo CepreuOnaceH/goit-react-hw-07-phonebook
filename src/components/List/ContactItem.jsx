@@ -4,10 +4,8 @@ import PropTypes from 'prop-types';
 const ContactItem = ({ userName, userNumber, userId }) => {
   return (
     <li id={userId}>
-      <h3>
-        `${userName}: ${userNumber}`
-        <DeleteBtn userId={userId}>Delete contact</DeleteBtn>
-      </h3>
+      <h3>{`${userName}: ${userNumber}`}</h3>
+      <DeleteBtn userId={userId}></DeleteBtn>
     </li>
   );
 };
