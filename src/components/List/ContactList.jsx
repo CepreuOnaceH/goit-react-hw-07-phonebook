@@ -13,6 +13,7 @@ const ContactList = () => {
   const contacts = useSelector(getContactsList);
   const loading = useSelector(getIsLoading);
   const dispatch = useDispatch();
+  console.log(contacts);
 
   useEffect(() => {
     dispatch(fetchContacts());
@@ -40,14 +41,17 @@ const ContactList = () => {
   }
   return (
     <>
-      {filteredContacts.map(contact => (
-        <ContactItem
-          userName={contact.name}
-          userNumber={contact.phone}
-          userId={contact.id}
-          key={contact.id}
-        />
-      ))}
+      {filteredContacts.map(contact => {
+        console.log(contact);
+        return (
+          <ContactItem
+            userName={contact.name}
+            userNumber={contact.phone}
+            userId={contact.id}
+            key={contact.id}
+          />
+        );
+      })}
     </>
   );
 };
