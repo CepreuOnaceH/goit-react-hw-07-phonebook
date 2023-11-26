@@ -8,7 +8,7 @@ const App = () => {
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        marginLeft: '50px',
         gap: '5px',
         flexDirection: 'column',
         justifyContent: 'center',
