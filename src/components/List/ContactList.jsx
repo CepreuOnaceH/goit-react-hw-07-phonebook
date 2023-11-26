@@ -42,7 +42,6 @@ const ContactList = () => {
   return (
     <>
       {filteredContacts.map(contact => {
-        console.log(contact);
         return (
           <ContactItem
             userName={contact.name}

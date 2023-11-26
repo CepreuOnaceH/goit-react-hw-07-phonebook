@@ -43,6 +43,9 @@ const ContactForm = () => {
       <label>
         Name
         <input
+          style={{
+            margin: '20px',
+          }}
           value={name}
           onChange={onChangeInput}
           type="text"
@@ -55,6 +58,9 @@ const ContactForm = () => {
       <label>
         Phone
         <input
+          style={{
+            margin: '20px',
+          }}
           value={number}
           onChange={onChangeInput}
           type="tel"
