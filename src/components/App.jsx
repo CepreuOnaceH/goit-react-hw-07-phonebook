@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div
       style={{
+        listStyle: 'none',
         height: '100vh',
         marginLeft: '50px',
         gap: '5px',
